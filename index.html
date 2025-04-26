@@ -3,18 +3,708 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Пакет кольорів для Lightroom</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="lang-switch-box">
+          <a class="lang-btn active" href="">ua</a>
+          <a class="lang-btn" href="">eng</a>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <div class="image-box"></div>
+          <div class="main-box">
+            <h1 class="title">
+              Пакет кольорів <br /><span>для</span> Lightroom
+            </h1>
+            <p class="desc">
+              Відтестований на тисячах кадрів — стиль, що працює завжди
+            </p>
+            <div class="btns-box">
+              <a class="hero-btn more" href="#more">детальніше</a>
+              <a class="hero-btn buy" href="#buy">купити</a>
+            </div>
+          </div>
+          <div class="forbes-box">
+            <div class="forbes-text-box">
+              <p class="forbes-text">Photographer — as seen in</p>
+              <img
+                class="forbes-logo"
+                src="./src/img/hero/forbes-logo.svg"
+                alt="forbes"
+                width="48"
+                height="auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-author" id="more">
+        <div class="container">
+          <h2
+            class="author-name"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-offset="200"
+          >
+            Наталія Томаш
+          </h2>
+          <p class="desc">fashion-фотограф з 13-річним досвідом</p>
+          <picture
+            ><source
+              srcset="
+                ./src/img/author/author-1x.jpg 1x,
+                ./src/img/author/author-2x.jpg 2x
+              "
+              width="100%"
+              height="auto" />
+            <img
+              class="author-image"
+              src="./src/img/author/author-1x.jpg"
+              alt="author"
+              width="100%"
+              height="auto"
+          /></picture>
+          <p class="text">
+            Мої роботи можна часто зустріти у міжнародних медіа, в тому числі і
+            Forbes, я працюю з брендами та інфлюенсерами в модній індустрії.
+          </p>
+          <p class="text">
+            Так само стильно і впевнено я створюю незабутні, чутливі весільні та
+            сімейні кадри, де кожна фотографія виглядає завершено завдяки
+            правильній кольоровій обробці
+          </p>
+        </div>
+      </section>
+      <section class="author-presets">
+        <div class="container">
+          <p class="count" data-countup>12</p>
+          <p class="text">
+            авторських пресетів для Lightroom, створених на основі тисяч зйомок
+          </p>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="container">
+          <div
+            class="short-box"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-offset="200"
+          >
+            <p class="short-tag">Wedding</p>
+            <img
+              class="short-circle"
+              src="./src/img/benefits/ellipse.svg"
+              alt="dot"
+              width="5"
+              height="5"
+            />
+            <p class="short-tag">Family</p>
+            <img
+              class="short-circle"
+              src="./src/img/benefits/ellipse.svg"
+              alt="dot"
+              width="5"
+              height="5"
+            />
+            <p class="short-tag">Street style</p>
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              <p class="item-name">Природна обробка</p>
+              <p class="item-text">без “зламаної” шкіри та перенасичення</p>
+            </li>
+            <li class="list-item">
+              <p class="item-name">Витримана естетика</p>
+              <p class="item-text">жодного “дешевого” чи штучного ефекту</p>
+            </li>
+            <li class="list-item">
+              <p class="item-name">Формують впізнаваний стиль</p>
+              <p class="item-text">у соцмережах та портфоліо</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="before-after">
+        <div class="container">
+          <div class="text-box">
+            <p class="text">before</p>
+            <p class="text">after</p>
+          </div>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="before-container">
+                  <div class="image-container">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/before-after/before-01-1x.jpg 1x,
+                          ./src/img/before-after/before-01-2x.jpg 2x
+                        "
+                        width="350"
+                        height="500" />
+                      <img
+                        class="image-before slider-image"
+                        src="./src/img/before-after/before-01-1x.jpg"
+                        alt="author"
+                        width="350"
+                        height="500"
+                    /></picture>
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/before-after/after-01-1x.jpg 1x,
+                          ./src/img/before-after/after-01-2x.jpg 2x
+                        "
+                        width="350"
+                        height="500" />
+                      <img
+                        class="image-after slider-image"
+                        src="./src/img/before-after/after-01-1x.jpg"
+                        alt="author"
+                        width="350"
+                        height="500"
+                    /></picture>
+                  </div>
+                  <!-- step="10" -->
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50"
+                    aria-label="Percentage of before photo shown"
+                    class="slider"
+                  />
+                  <div class="slider-line" aria-hidden="true"></div>
+                  <div class="slider-button" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <line
+                        x1="128"
+                        y1="40"
+                        x2="128"
+                        y2="216"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <line
+                        x1="96"
+                        y1="128"
+                        x2="16"
+                        y2="128"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <polyline
+                        points="48 160 16 128 48 96"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></polyline>
+                      <line
+                        x1="160"
+                        y1="128"
+                        x2="240"
+                        y2="128"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <polyline
+                        points="208 96 240 128 208 160"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="before-container">
+                  <div class="image-container">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/before-after/before-02-1x.jpg 1x,
+                          ./src/img/before-after/before-02-2x.jpg 2x
+                        "
+                        width="350"
+                        height="500" />
+                      <img
+                        class="image-before slider-image"
+                        src="./src/img/before-after/before-02-1x.jpg"
+                        alt="author"
+                        width="350"
+                        height="500"
+                    /></picture>
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/before-after/after-02-1x.jpg 1x,
+                          ./src/img/before-after/after-02-2x.jpg 2x
+                        "
+                        width="350"
+                        height="500" />
+                      <img
+                        class="image-after slider-image"
+                        src="./src/img/before-after/after-02-1x.jpg"
+                        alt="author"
+                        width="350"
+                        height="500"
+                    /></picture>
+                  </div>
+                  <!-- step="10" -->
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50"
+                    aria-label="Percentage of before photo shown"
+                    class="slider"
+                  />
+                  <div class="slider-line" aria-hidden="true"></div>
+                  <div class="slider-button" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <line
+                        x1="128"
+                        y1="40"
+                        x2="128"
+                        y2="216"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <line
+                        x1="96"
+                        y1="128"
+                        x2="16"
+                        y2="128"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <polyline
+                        points="48 160 16 128 48 96"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></polyline>
+                      <line
+                        x1="160"
+                        y1="128"
+                        x2="240"
+                        y2="128"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <polyline
+                        points="208 96 240 128 208 160"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="before-container">
+                  <div class="image-container">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/before-after/before-03-1x.jpg 1x,
+                          ./src/img/before-after/before-03-2x.jpg 2x
+                        "
+                        width="350"
+                        height="500" />
+                      <img
+                        class="image-before slider-image"
+                        src="./src/img/before-after/before-03-1x.jpg"
+                        alt="author"
+                        width="350"
+                        height="500"
+                    /></picture>
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/before-after/after-03-1x.jpg 1x,
+                          ./src/img/before-after/after-03-2x.jpg 2x
+                        "
+                        width="350"
+                        height="500" />
+                      <img
+                        class="image-after slider-image"
+                        src="./src/img/before-after/after-03-1x.jpg"
+                        alt="author"
+                        width="350"
+                        height="500"
+                    /></picture>
+                  </div>
+                  <!-- step="10" -->
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50"
+                    aria-label="Percentage of before photo shown"
+                    class="slider"
+                  />
+                  <div class="slider-line" aria-hidden="true"></div>
+                  <div class="slider-button" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <line
+                        x1="128"
+                        y1="40"
+                        x2="128"
+                        y2="216"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <line
+                        x1="96"
+                        y1="128"
+                        x2="16"
+                        y2="128"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <polyline
+                        points="48 160 16 128 48 96"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></polyline>
+                      <line
+                        x1="160"
+                        y1="128"
+                        x2="240"
+                        y2="128"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <polyline
+                        points="208 96 240 128 208 160"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="before-container">
+                  <div class="image-container">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/before-after/before-04-1x.jpg 1x,
+                          ./src/img/before-after/before-04-2x.jpg 2x
+                        "
+                        width="350"
+                        height="500" />
+                      <img
+                        class="image-before slider-image"
+                        src="./src/img/before-after/before-04-1x.jpg"
+                        alt="author"
+                        width="350"
+                        height="500"
+                    /></picture>
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/before-after/after-04-1x.jpg 1x,
+                          ./src/img/before-after/after-04-2x.jpg 2x
+                        "
+                        width="350"
+                        height="500" />
+                      <img
+                        class="image-after slider-image"
+                        src="./src/img/before-after/after-04-1x.jpg"
+                        alt="author"
+                        width="350"
+                        height="500"
+                    /></picture>
+                  </div>
+                  <!-- step="10" -->
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50"
+                    aria-label="Percentage of before photo shown"
+                    class="slider"
+                  />
+                  <div class="slider-line" aria-hidden="true"></div>
+                  <div class="slider-button" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <line
+                        x1="128"
+                        y1="40"
+                        x2="128"
+                        y2="216"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <line
+                        x1="96"
+                        y1="128"
+                        x2="16"
+                        y2="128"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <polyline
+                        points="48 160 16 128 48 96"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></polyline>
+                      <line
+                        x1="160"
+                        y1="128"
+                        x2="240"
+                        y2="128"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></line>
+                      <polyline
+                        points="208 96 240 128 208 160"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="16"
+                      ></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev">
+              <img
+                src="./src/img/before-after/swiper-arrow.svg"
+                alt="left"
+                width="40"
+              />
+            </div>
+            <div class="swiper-button-next">
+              <img
+                src="./src/img/before-after/swiper-arrow.svg"
+                alt="left"
+                width="40"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price-section" id="buy">
+        <div class="container">
+          <h2 class="title">Вартість</h2>
+          <p
+            class="subtitle"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-offset="200"
+          >
+            пакету Lightroom
+          </p>
+          <div class="price-wrapper">
+            <div class="price-box">
+              <p class="old-price">83£</p>
+              <p class="new-price">33£</p>
+            </div>
+            <p class="slash">/</p>
+            <div class="price-box">
+              <p class="old-price">4550грн</p>
+              <p class="new-price">1550грн</p>
+            </div>
+          </div>
+          <a class="buy-now-btn" href=""
+            >Придбати зараз <br /><span>зі знижкою -65%</span></a
+          >
+        </div>
+      </section>
+      <section class="easy">
+        <div class="container">
+          <h2 class="title">Стильно. Легко.</h2>
+          <p
+            class="subtitle"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-offset="200"
+          >
+            Професійно
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              Для всіх, хто знімає на камеру та редагує фото в Lightroom
+              (desktop version)
+            </li>
+            <li class="list-item">
+              12 пресетів, які не втрачають актуальності, створенні щоб
+              доповнювати один одного і тим створювати впізнаваний стиль
+            </li>
+            <li class="list-item">
+              13 років досвіду, пресети перевірені роками і понад 4 000
+              задоволених клієнтів
+            </li>
+            <li class="list-item">
+              Натуральні, теплі, світлі кольори для різних типів зйомки
+            </li>
+            <li class="list-item">Професійна обробка = більше клієнтів</li>
+          </ul>
+        </div>
+      </section>
+      <section class="be-pro">
+        <div class="container">
+          <p
+            class="pre-title"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-offset="200"
+          >
+            В один клік
+          </p>
+          <h2 class="title">редагуй як PRO</h2>
+          <p class="desc">
+            Пакет кольорів для Lightroom, що відкриває новий рівень обробки:
+            швидко, природно, професійно.
+          </p>
+        </div>
+        <div class="pro-image">
+          <p class="text">
+            Редагуй впевнено <br />
+            Вражай з першого погляду
+          </p>
+        </div>
+        <a class="buy-now" href="#buy">Придбати зараз</a>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer">
+      <div class="container">
+        <ul class="links">
+          <li class="list-item">
+            <a
+              class="social-link"
+              target="_blank"
+              rel="nofollow"
+              href="nataliatomashka@gmail.com"
+              >Instagram</a
+            >
+          </li>
+          <li class="list-item">
+            <a class="social-link" href="mailto:nataliatomashka@gmail.com"
+              >E-mail</a
+            >
+          </li>
+        </ul>
+        <a
+          class="web-creator"
+          target="_blank"
+          rel="nofollow"
+          href="https://www.instagram.com/lisabardadym"
+          >website by <span>lisa bardadym</span></a
+        >
+      </div>
+    </footer>
+    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/before-after.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./src/js/score.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
