@@ -6,7 +6,7 @@ export default () => {
     build: {
       rollupOptions: {
         input: {
-          ua: path.resolve(__dirname, 'ua.html'),
+          ua: path.resolve(__dirname, 'index.html'),
           eng: path.resolve(__dirname, 'eng.html'),
         },
       },
