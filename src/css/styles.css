@@ -284,6 +284,10 @@ body {
   margin: -12px auto 0 auto;
 }
 
+.about-author .desc.eng {
+  max-width: 280px;
+}
+
 .about-author .text {
   position: relative;
   z-index: 999;
@@ -350,6 +354,8 @@ body {
 }
 
 .author-presets .text {
+  margin-top: -16px;
+
   color: #090909;
   text-align: justify;
   font-family: 'Helvetica Neue';
@@ -632,6 +638,11 @@ body {
   margin-bottom: 80px;
 }
 
+.price-section .subtitle.eng {
+  margin-top: -8px;
+  text-transform: lowercase;
+}
+
 .price-section .price-wrapper {
   display: flex;
   gap: 20px;
@@ -782,7 +793,7 @@ body {
   font-style: normal;
   font-weight: 100;
   line-height: 100%; /* 42px */
-  text-transform: capitalize;
+  text-transform: unset;
 }
 
 .be-pro .title {

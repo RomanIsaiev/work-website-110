@@ -1,7 +1,16 @@
 import viteImagemin from 'vite-plugin-imagemin';
+import path from 'path';
 
 export default () => {
   return {
+    build: {
+      rollupOptions: {
+        input: {
+          ua: path.resolve(__dirname, 'ua.html'),
+          eng: path.resolve(__dirname, 'eng.html'),
+        },
+      },
+    },
     plugins: [
       viteImagemin({
         gifsicle: {
